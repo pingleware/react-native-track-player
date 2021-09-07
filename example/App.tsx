@@ -26,17 +26,17 @@ import localTrack from './react/resources/pure.m4a';
 
 const setup = async () => {
   await TrackPlayer.setupPlayer({});
-  // await TrackPlayer.updateOptions({
-  //   stopWithApp: true,
-  //   capabilities: [
-  //     Capability.Play,
-  //     Capability.Pause,
-  //     Capability.SkipToNext,
-  //     Capability.SkipToPrevious,
-  //     Capability.Stop,
-  //   ],
-  //   compactCapabilities: [Capability.Play, Capability.Pause],
-  // });
+  await TrackPlayer.updateOptions({
+    stopWithApp: true,
+    capabilities: [
+      Capability.Play,
+      Capability.Pause,
+      Capability.SkipToNext,
+      Capability.SkipToPrevious,
+      Capability.Stop,
+    ],
+    compactCapabilities: [Capability.Play, Capability.Pause],
+  });
 
   await TrackPlayer.add(playlistData);
   await TrackPlayer.add({
