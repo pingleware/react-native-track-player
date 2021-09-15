@@ -40,7 +40,7 @@ const setup = async () => {
     compactCapabilities: [Capability.Play, Capability.Pause],
   });
 
-  // await TrackPlayer.add(playlistData);
+  await TrackPlayer.add(playlistData);
   await TrackPlayer.add({
     url: localTrack,
     title: 'Pure (Demo)',
