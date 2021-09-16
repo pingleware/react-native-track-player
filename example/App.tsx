@@ -78,7 +78,7 @@ const App = () => {
   const [trackArtist, setTrackArtist] = useState<string>();
 
   useTrackPlayerEvents(
-    [Event.PlaybackTrackChanged, Event.RemotePlay, Event.RemotePause],
+    [Event.PlaybackTrackChanged, Event.RemotePlay, Event.RemotePause, Event.RemoteDuck],
     async event => {
       if (
         event.type === Event.PlaybackTrackChanged &&
@@ -93,6 +93,8 @@ const App = () => {
         TrackPlayer.pause();
       } else if (event.type === Event.RemotePlay) {
         TrackPlayer.play();
+      } else if (event.type === Event.RemoteDuck) {
+        TrackPlayer.stop()
       }
     },
   );
