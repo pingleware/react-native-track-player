@@ -147,3 +147,6 @@ start();
 
 ## Community
 You can find us as part of the [React Native Folks](https://discordapp.com/invite/ya2XDCR) Discord in the `#react-native-track-player` channel.
+
+## TODO
+PressPage Entertainment Inc DBA PINGLEWARE is researching the ability to include the features from the Crown A-800 background music machine with commercial broadcasting as mentioned in the following video https://www.youtube.com/watch?v=tkkx2h-rIEI
